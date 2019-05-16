@@ -64,7 +64,7 @@ class WorkWithStrings {
         int counter = 0;
         int start = 0;
         for (int i = 0; i < chars.length; i++){
-            if (chars[i] == ' ' || chars[i] == '\u0009'){
+            if (Character.isWhitespace(chars[i])){
                 start++;
                 counter++;
             } else {
@@ -74,7 +74,7 @@ class WorkWithStrings {
         // если в строке не только пробелы
         if (counter != chars.length) {
             for (int i = chars.length - 1; i >= 0; i--) {
-                if (chars[i] == ' ' || chars[i] == '\u0009') {
+                if (Character.isWhitespace(chars[i])) {
                     counter++;
                 } else {
                     break;
