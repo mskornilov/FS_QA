@@ -16,7 +16,6 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group: 'commons-io', name: 'commons-io', version: '2.6'
     compileOnly 'org.projectlombok:lombok:1.18.8'
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
     implementation 'com.github.everit-org.json-schema:org.everit.json.schema:1.11.1'

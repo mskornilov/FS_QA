@@ -5,30 +5,22 @@ import models.Animal;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Scanner;
 
 import static com.google.gson.stream.JsonToken.BEGIN_ARRAY;
 
-public class Deserialize {
+class Deserialize {
 
-    static Path askForPathToJSON(){
-        String path = "";
-        while (path.equals("")){
-            System.out.println("Enter path to JSON");
-            Scanner in = new Scanner(System.in);
-            path = in.nextLine();
-            Path file = Paths.get(path);
-            if (!Files.exists(file)) {
-                System.out.println("File does not exists");
-                path = "";
-            }
-        }
-        return Paths.get(path);
-    }
-
+    /**
+     * Десериализует JSON в объекты модели Animal
+     * Вызывает метод askPathToJSON класса ValidateSchema
+     * получает из него путь к JSON файлу
+     * Если файл начинается с "[", считает, что это массив JSON-объектов
+     * и сериализует в массив объектов типа Animal
+     * выводит в консоль результат десериализации
+     * @throws IOException
+     */
     static void deserializeAnimal() throws IOException {
-        Path file = askForPathToJSON();
+        Path file = ValidateSchema.askForPathToJSON();
         Gson gson = new Gson();
         JsonReader reader = new JsonReader(Files.newBufferedReader(file));
         if (reader.peek() == BEGIN_ARRAY){
@@ -37,9 +29,9 @@ public class Deserialize {
                 System.out.println(obj);
             }
         } else {
-            Animal vasya = null;
-            vasya = gson.fromJson(reader, Animal.class);
-            System.out.println(vasya);
+            Animal animal;
+            animal = gson.fromJson(reader, Animal.class);
+            System.out.println(animal);
         }
     }
 

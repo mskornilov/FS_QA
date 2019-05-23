@@ -8,7 +8,7 @@ public class App {
         int typeOfWork = 0;
         while (typeOfWork != 4){
             while (typeOfWork <=0 || typeOfWork > 4){
-                System.out.println("фывофлывофыWhat are we gonna do:");
+                System.out.println("What are we gonna do:");
                 System.out.println("1 - deserialize JSON (object or array of objects)");
                 System.out.println("2 - serialize object to JSON");
                 System.out.println("3 - validate JSON against JSONSchema");
@@ -46,7 +46,6 @@ public class App {
                         break;
                 }
             }
-
         }
     }
 }

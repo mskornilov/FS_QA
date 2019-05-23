@@ -3,8 +3,13 @@ import com.google.gson.GsonBuilder;
 import models.Animal;
 import models.Friends;
 
-public class Serialize {
+class Serialize {
 
+
+    /**
+     * создает новый экземпляр класса Animal для последующей сериализации
+     * @return объект типа Animal
+     */
     static Animal createNewAnimal(){
         Animal vasilij = new Animal();
         Friends f = new Friends();
@@ -20,6 +25,12 @@ public class Serialize {
         return vasilij;
     }
 
+
+    /**
+     * сериализует объект типа Animal
+     * и выводит в консоль JSON отфарматированный pretty printer'ом
+     * @param obj
+     */
     static void serialize(Animal obj){
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(obj);
