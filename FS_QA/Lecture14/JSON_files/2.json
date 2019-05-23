@@ -1,0 +1,28 @@
+[
+  {
+    "animal_type": "cat",
+    "name": "Vasya",
+    "age": 25,
+    "has_tail": true,
+    "colors": [
+      "white",
+      "orange",
+      "black"
+    ],
+    "friends": {
+      "count": 3
+    }
+  },
+  {
+    "animal_type": "turtle",
+    "name": "Tortilla",
+    "age": 100,
+    "has_tail": true,
+    "colors": [
+      "dark_green"
+    ],
+    "friends": {
+      "count": 5
+    }
+  }
+]
