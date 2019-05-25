@@ -107,13 +107,6 @@ public class App {
                         System.out.println("Удаление директории");
                         String param = UserInteractions.askForParam();
                         file.deleteDirectory(null, param);
-//                        if (result == 0){
-//                            System.out.println("Директория успешно удалена");
-//                        } else if (result == 1) {
-//                            System.out.println("Директория не существует.");
-//                        } else {
-//                            System.out.println("Директория не пуста или открыта в другой программе.");
-//                        }
                         break;
                     case 6:
                         file.setPath(UserInteractions.askToChangePath(file.getPath()));
