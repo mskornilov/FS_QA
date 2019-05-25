@@ -171,7 +171,7 @@ public class MyFile {
                     line = UserInteractions.askForLine();
                     try {
                         Files.writeString(this.path, line);
-                        result = "Файл создан, строка записаны.";
+                        result = "Файл создан, строка записана.";
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -201,6 +201,7 @@ public class MyFile {
                     break;
                 case 3:
                     // выбрать другой файл
+                    setPath(UserInteractions.askToChangePath(path));
                     break;
             }
         }
@@ -254,6 +255,7 @@ public class MyFile {
                     break;
                 case 3:
                     // выбрать другой файл
+                    setPath(UserInteractions.askToChangePath(path));
                     break;
             }
         }
