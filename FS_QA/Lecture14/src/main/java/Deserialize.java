@@ -34,48 +34,5 @@ class Deserialize {
             System.out.println(animal);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    public static void main(String[] args) throws FileNotFoundException, IOException {
-//        GsonBuilder builder = new GsonBuilder();
-//        Gson gson = builder.create();
-//        JsonReader reader = new JsonReader(new FileReader("C:\\Users\\Mo\\Desktop\\Lecture14\\src\\main\\resources\\1.json"));
-//        Animal Vasya = gson.fromJson(reader, Animal.class);
-//        System.out.println(Vasya);
-//
-////        try (InputStream inputStream = Deserialize.class.getResourceAsStream("/Animal.json")){
-//////            JSONObject rawSchema = new JSONObject(new JSONTokener(inputStream));
-//////            Schema schema = SchemaLoader.load(rawSchema);
-//////            System.out.println(schema);
-////            SchemaLoader schemaLoader = SchemaLoader.builder()
-////                    .schemaClient(SchemaClient.classPathAwareClient())
-////                    .schemaJson(new JSONObject(new JSONTokener(inputStream)))
-////                    .resolutionScope("classpath:/") // setting the default resolution scope
-////                    .build();
-////            Schema schema = schemaLoader.load().build();
-////            InputStream inputJson = Deserialize.class.getResourceAsStream("/1.json");
-////            schema.validate(new JSONObject(new JSONTokener(inputJson)));
-////        } catch (ValidationException e) {
-////            System.out.println(e.toJSON());
-////        }
-//    }
 }
 
