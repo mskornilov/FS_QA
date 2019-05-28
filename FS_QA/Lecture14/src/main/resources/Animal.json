@@ -28,7 +28,7 @@
       "uniqueItems": true
     },
     "friends": {
-      "$ref": "friends.json"
+      "$ref": "Friends.json"
     }
   }
 }
