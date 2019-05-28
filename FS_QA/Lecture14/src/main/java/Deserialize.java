@@ -12,7 +12,7 @@ class Deserialize {
 
     /**
      * Десериализует JSON в объекты модели Animal
-     * Вызывает метод askPathToJSON класса ValidateSchema
+     * Вызывает метод askPathToJSON класса UserInteractions
      * получает из него путь к JSON файлу
      * Если файл начинается с "[", считает, что это массив JSON-объектов
      * и сериализует в массив объектов типа Animal
@@ -20,7 +20,7 @@ class Deserialize {
      * @throws IOException
      */
     static void deserializeAnimal() throws IOException {
-        Path file = ValidateSchema.askForPathToJSON();
+        Path file = UserInteractions.askForPathToJSON();
         Gson gson = new Gson();
         JsonReader reader = new JsonReader(Files.newBufferedReader(file));
         if (reader.peek() == BEGIN_ARRAY){

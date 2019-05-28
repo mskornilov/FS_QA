@@ -33,7 +33,7 @@ public class App {
                         System.out.println("********************************");
                         break;
                     case 3:
-                        if (ValidateSchema.validate(ValidateSchema.askWhatToDo())) {
+                        if (ValidateSchema.validate(UserInteractions.askWhatToDo())) {
                             System.out.println("Validation successful");
                         } else {
                             System.out.println("Validation error");
