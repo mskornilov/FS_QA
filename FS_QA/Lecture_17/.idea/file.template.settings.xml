@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="Singleton.java" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="Substep Definition.substeps" reformat="true" live-template-enabled="true" enabled="true" />
+      <template name="Substep Feature.feature" reformat="true" live-template-enabled="true" enabled="true" />
+    </default_templates>
+    <internal_templates>
+      <template name="Groovy Script.groovy" reformat="true" live-template-enabled="true" enabled="true" />
+    </internal_templates>
+    <includes_templates>
+      <template name="File Header.java" reformat="true" live-template-enabled="true" enabled="true" />
+    </includes_templates>
+    <code_templates>
+      <template name="Catch Statement Body.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Catch Statement Declaration.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Cucumber Java 8 Step Definition.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Cucumber Java Step Definition.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Groovy JUnit SetUp Method.groovy" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Groovy JUnit TearDown Method.groovy" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Groovy JUnit Test Case.groovy" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Groovy JUnit Test Method.groovy" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Groovy New Method Body.groovy" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="I18nized Concatenation.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="I18nized Expression.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="I18nized JSP Expression.jsp" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Implemented Method Body.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit3 SetUp Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit3 TearDown Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit3 Test Class.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit3 Test Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit4 Parameters Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit4 SetUp Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit4 TearDown Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit4 Test Class.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit4 Test Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit5 SetUp Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit5 TearDown Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit5 Test Class.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="JUnit5 Test Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="New Kotlin Function Body.kt" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="New Kotlin Property Initializer.kt" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="New Kotlin Secondary Constructor Body.kt" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="New Method Body.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Overridden Method Body.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Spock cleanup Method.groovy" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Spock Test Method.groovy" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Spock_SetUp_Method.groovy" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="Switch Default Branch.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="TestNG Parameters Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="TestNG SetUp Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="TestNG TearDown Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="TestNG Test Class.java" reformat="true" live-template-enabled="false" enabled="false" />
+      <template name="TestNG Test Method.java" reformat="true" live-template-enabled="false" enabled="false" />
+    </code_templates>
+  </component>
+</project>
