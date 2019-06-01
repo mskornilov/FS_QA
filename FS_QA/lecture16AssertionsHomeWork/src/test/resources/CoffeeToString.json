@@ -1,0 +1,5 @@
+{
+"Espresso": "Coffee{type=Espresso, beans=7, milk=0}",
+"Latte": "Coffee{type=Latte, beans=7, milk=227}",
+"FilterCoffee": "Coffee{type=FilterCoffee, beans=10, milk=0}"
+}

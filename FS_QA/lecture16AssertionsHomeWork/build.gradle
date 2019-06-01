@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.cft.focus'
+version '1.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+test {
+ dependsOn "jUnitTests", "assertJTests"
+}
+
+task jUnitTests (type: Test) {
+    useJUnitPlatform {
+        includeTags 'junit'
+    }
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
+}
+
+task assertJTests (type: Test) {
+    useJUnitPlatform {
+        includeTags 'assertJ'
+    }
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
+    failFast true
+}
+
+
+dependencies {
+    def junitVersion = '5.4.2'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: junitVersion
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: junitVersion
+    testCompile("org.assertj:assertj-core:3.11.1")
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    compile group: 'org.json', name: 'json', version: '20180813'
+}
