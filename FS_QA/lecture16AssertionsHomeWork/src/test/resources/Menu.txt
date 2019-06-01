@@ -1,0 +1,4 @@
+Menu:
+1. Espresso  -  3.50$
+2. Latte  -  5.50$
+3. FilterCoffee  - 4.00$
