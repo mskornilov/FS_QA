@@ -1,0 +1,25 @@
+/* функция fSalary /*
+
+CREATE OR REPLACE FUNCTION fSalary(nEmpID number) RETURN number IS
+  nSalary hr.employees.salary%Type;
+BEGIN
+  SELECT salary INTO nSalary FROM hr.employees WHERE employee_id=nEmpID;
+  RETURN(nSalary);
+EXCEPTION 
+  WHEN NO_DATA_FOUND THEN
+    raise_application_error (-20619, 'Сотрудника с id: ' || nEmpID || ' не существует!');
+END fSalary;
+
+/* вызов функции и вывод результата в консоль /*
+
+DECLARE
+  nSalary hr.employees.salary%Type;
+  nEmpId hr.employees.employee_id%Type := &id_сотрудника;
+  sFirstName hr.employees.first_name%Type;
+  sLastName hr.employees.last_name%Type;
+BEGIN
+SELECT fSalary(nEmpId) INTO nSalary FROM dual;
+SELECT first_name INTO sFirstName FROM hr.employees WHERE employee_id = nEmpId;
+SELECT last_name INTO sLastName FROM hr.employees WHERE employee_id = nEmpId;
+DBMS_OUTPUT.put_line('Зарплата ' || sFirstName || ' ' || sLastName || ' составляет: ' ||  nSalary);
+END;

@@ -1,0 +1,13 @@
+/*Код процедуры*/
+
+CREATE OR REPLACE PROCEDURE hr.pSalary(nEmpId number, nNewSalary number) IS
+BEGIN
+  UPDATE hr.employees SET salary = nNewSalary WHERE employee_id = nEmpId;
+END pSalary;
+
+
+/*Код вызова процедуры*/
+
+BEGIN
+    hr.pSalary(100, 25000);
+END;
