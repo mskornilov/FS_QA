@@ -1,0 +1,7 @@
+{
+  "title": "restassuredissue",
+  "body": "Nothing works! Pochinite!",
+  "milestone": 1,
+  "labels": ["FS_QA", "REST Assured"],
+  "assignees": ["johndoefsqa"]
+}

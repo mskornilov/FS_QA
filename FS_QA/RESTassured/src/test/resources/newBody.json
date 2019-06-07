@@ -1,0 +1,6 @@
+{
+  "title": "restassuredissue",
+  "body": "Everything is fine now",
+  "labels": ["FS_QA", "REST Assured"],
+  "assignees": ["johndoefsqa"]
+}
