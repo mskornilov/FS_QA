@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+
+dependencies {
+    testCompile 'io.rest-assured:rest-assured:4.0.0'
+    testImplementation('org.junit.jupiter:junit-jupiter:5.4.2')
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    compile group: 'org.json', name: 'json', version: '20180813'
+    testCompile("org.assertj:assertj-core:3.11.1")
+    compile 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+
+}
